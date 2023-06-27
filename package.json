@@ -5,10 +5,10 @@
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/playground-ui-lib"
+    "url": "https://github.com/storchk/playground-ui-lib"
   },
   "bugs": {
-    "url": "https://github.com/chromaui/playground-ui-lib/issues"
+    "url": "https://github.com/storchk/playground-ui-lib/issues"
   },
   "license": "MIT",
   "private": true,
@@ -24,7 +24,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "init-msw": "msw init public/",
-    "lint": "eslint src --ext ts,tsx,mdx",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --quiet --ignore-path .eslintignore",
     "prepare": "husky install"
   },
   "devDependencies": {

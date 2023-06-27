@@ -1,20 +1,10 @@
-export type Size = {
-  xxs: string
-  xs: string
-  sm: string
-  md: string
-  lg: string
-  xl: string
-  xxl: string
-  xxxl: string
-  xxxxl: string
-}
+import type { SizeType } from './size'
+import { size } from './size'
 
 export type SpacingType = {
-  [size in keyof Size]: string
+  [size in keyof Omit<SizeType, 'baseSize'>]: string
 }
-
-const baseSize = 8
+const { baseSize } = size
 
 export const spacing: SpacingType = {
   xxs: `${baseSize * 0.5}px`,

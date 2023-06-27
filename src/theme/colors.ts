@@ -19,6 +19,8 @@ export const colors = {
   textWhiteSoft: 'rgba(255, 255, 255, .70)',
 }
 
+export type ColorNames = keyof typeof colors
+
 export type ColorsType = {
-  [color in keyof typeof colors]: string
+  [color in ColorNames]: string
 }

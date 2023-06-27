@@ -1,5 +1,4 @@
-import { css } from "styled-components"
-
+import { css } from 'styled-components'
 
 export const styledCssReset = css`
   /***
@@ -81,7 +80,7 @@ export const styledCssReset = css`
   :where([draggable='true']) {
     -webkit-user-drag: element;
   }
-  
+
   // Custom reset styles
 
   html {
@@ -115,7 +114,7 @@ export const styledCssReset = css`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   ${
     /* 
    this is to support styling from the Contentful Rich Text Editor */ ''
@@ -137,4 +136,4 @@ export const styledCssReset = css`
   ::-ms-reveal {
     display: none;
   }
-  `
+`
