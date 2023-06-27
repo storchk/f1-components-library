@@ -54,7 +54,7 @@ export const StyledButton = styled.button<StyledButtonProps>(
     padding: ${theme.spacing.xs} ${theme.spacing.sm};
     border-radius: ${theme.border.radius};
     border: ${theme.border.width} solid;
-    color: ${theme.colors.textWhite};
+    color: ${$color === 'gold' ? theme.colors.textDark : theme.colors.textWhite};
 
     ${$variant === 'positive' ? css`` : ''}
     ${getColorStylesByColor(theme, $color)}
