@@ -6,6 +6,10 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "mdx": {
+      "code-blocks": true,
+      "language-mapper": {}
     }
   },
   "extends": [
@@ -19,7 +23,8 @@
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:mdx/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },

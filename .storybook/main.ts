@@ -1,15 +1,15 @@
 // .storybook/main.ts
 
-import { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from '@storybook/react-vite'
 
 const config: StorybookConfig = {
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: '@storybook/react-vite',
     options: {},
   },
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -23,6 +23,6 @@ const config: StorybookConfig = {
       propFilter: () => true,
     },
   },
-};
+}
 
-export default config;
+export default config
