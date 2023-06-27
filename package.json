@@ -25,7 +25,6 @@
     "build-storybook": "storybook build",
     "init-msw": "msw init public/",
     "lint": "eslint \"**/*.{js,ts,tsx}\" --quiet --ignore-path .eslintignore",
-    "prepare": "husky install",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
