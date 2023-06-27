@@ -1,30 +1,12 @@
 import styled, { css } from 'styled-components'
 
 import type { ThemeType } from '../../../theme'
-import type { ButtonColor, ButtonVariant, StyledButtonProps } from './Button.types'
+import type { ButtonColor, StyledButtonProps } from './Button.types'
 
-const getVariantStylesByVariant = (theme: ThemeType, variant: ButtonVariant) => {
-  switch (variant) {
-    case 'positive':
-      return css`
-        color: ${theme.colors.textWhite};
-      `
-    case 'textLink':
-      return css``
-    case 'textOnly':
-      return css``
-    case 'default':
-    default:
-      return css`
-        background-color: transparent;
-      `
-  }
-}
 const getColorStylesByColor = (theme: ThemeType, color: ButtonColor) => {
   switch (color) {
     case 'black':
       return css`
-        color: ${theme.colors.black};
         border-color: ${theme.colors.black};
         background-color: ${theme.colors.black};
 
@@ -35,7 +17,6 @@ const getColorStylesByColor = (theme: ThemeType, color: ButtonColor) => {
       `
     case 'gold':
       return css`
-        color: ${theme.colors.gold};
         border-color: ${theme.colors.gold};
         background-color: ${theme.colors.gold};
 
@@ -46,7 +27,6 @@ const getColorStylesByColor = (theme: ThemeType, color: ButtonColor) => {
       `
     case 'white':
       return css`
-        color: ${theme.colors.white};
         border-color: ${theme.colors.white};
         background-color: ${theme.colors.white};
 
@@ -58,7 +38,6 @@ const getColorStylesByColor = (theme: ThemeType, color: ButtonColor) => {
     case 'primary':
     default:
       return css`
-        color: ${theme.colors.primary};
         border-color: ${theme.colors.primary};
         background-color: ${theme.colors.primary};
 
@@ -75,8 +54,9 @@ export const StyledButton = styled.button<StyledButtonProps>(
     padding: ${theme.spacing.xs} ${theme.spacing.sm};
     border-radius: ${theme.border.radius};
     border: ${theme.border.width} solid;
+    color: ${theme.colors.textWhite};
 
+    ${$variant === 'positive' ? css`` : ''}
     ${getColorStylesByColor(theme, $color)}
-    ${getVariantStylesByVariant(theme, $variant)}
   `
 )

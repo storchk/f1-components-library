@@ -4,7 +4,7 @@ export type FontWeightType = {
   [weight in FontWeights]: number | 'normal' | 'bold'
 }
 
-export type FontSize = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+export type FontSize = 'xxxxs' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
 
 export type FontSizeType = {
   [size in FontSize]: string
@@ -17,6 +17,8 @@ export type FontType = {
 
 export const font: FontType = {
   size: {
+    xxxxs: '0.8rem',
+    xxxs: '1rem',
     xxs: '1.3rem',
     xs: '1.6rem',
     sm: '1.9rem',
