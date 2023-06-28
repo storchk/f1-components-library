@@ -9,9 +9,9 @@ export type BreakpointsType = {
 
 export const breakpoints: BreakpointsType = {
   xsScreen: 0,
-  smScreen: 480,
+  smScreen: 576,
   mdScreen: 768,
-  lgScreen: 1024,
+  lgScreen: 992,
   xlScreen: 1280,
-  xxlScreen: 1600,
+  xxlScreen: 1400,
 }

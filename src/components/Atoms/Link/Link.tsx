@@ -3,16 +3,20 @@ import { StyledLink } from './Link.styled'
 import type { LinkProps } from './Link.types'
 export const Link = ({
   children,
-  fontSize,
   fontWeight = 'regular',
   $isUppercase = false,
+  $inline,
   ...props
 }: LinkProps): JSX.Element => {
   return (
-    <StyledLink {...props}>
-      <Typography $isUppercase={$isUppercase} fontSize={fontSize} fontWeight={fontWeight}>
-        {children}
-      </Typography>
-    </StyledLink>
+    <>
+      {$inline ? ' ' : null}
+      <StyledLink {...props} $inline={$inline}>
+        <Typography $isUppercase={$isUppercase} fontWeight={fontWeight}>
+          {children}
+        </Typography>
+      </StyledLink>
+      {$inline ? ' ' : null}
+    </>
   )
 }

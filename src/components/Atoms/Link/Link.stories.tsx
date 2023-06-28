@@ -66,7 +66,12 @@ export const Example: Story = {
     <Typography>
       Ahead of the Spanish Grand Prix earlier this month, F1 and DHL presented the latest innovation
       aimed at making the sport more sustainable –{' '}
-      <Link color={color} fontWeight={fontWeight} $inline>
+      <Link
+        color={color}
+        fontWeight={fontWeight}
+        $inline
+        href="https://www.formula1.com/en/latest/article.formula-1-and-dhl-introduce-biofueled-trucks-for-european-races-in-2023.6hFBt5ENDwMXXIQj0euOyc.html"
+      >
         a brand new fleet of 18 biofuel-powered trucks
       </Link>{' '}
       set to deliver the equipment needed for the European portion of the F1 season.
