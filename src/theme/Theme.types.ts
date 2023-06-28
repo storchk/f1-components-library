@@ -1,8 +1,5 @@
-import type { BorderType } from './border'
+import type { BorderType, FontType, SizeType, SpacingType } from '../styles'
 import type { ColorsType } from './colors'
-import type { FontType } from './fonts'
-import type { SizeType } from './size'
-import type { SpacingType } from './spacing'
 
 export type ThemeType = {
   border: BorderType
