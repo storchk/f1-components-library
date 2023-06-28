@@ -6,12 +6,12 @@ export const StyledTypography = styled.div<TypographyProps>(
   ({
     theme,
     fontWeight = 'regular',
-    fontSize = 'sm',
+    fontSize,
     color,
     $isUppercase = false,
     fontFamily = 'default',
   }) => css`
-    font-size: ${theme.font.size[fontSize]};
+    font-size: ${fontSize ? theme.font.size[fontSize] : 'inherit'};
     font-weight: ${theme.font.weight[fontWeight]};
     color: ${color ? theme.colors[color] : 'inherit'};
     font-family: ${theme.font.fontFamily[fontFamily]};
