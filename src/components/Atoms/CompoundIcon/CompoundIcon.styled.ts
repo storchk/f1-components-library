@@ -3,6 +3,13 @@ import styled, { css } from 'styled-components'
 import type { ThemeType } from '../../../theme'
 import type { StyledCompoundProps, StyledTireProps } from './CompoundIcon.types'
 
+export const StyledCompoundContainer = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
 export const StyledCompound = styled.div<StyledCompoundProps>(
   ({ theme, compoundType, size }) => css`
     width: ${getDimension(size).compound};
@@ -13,11 +20,11 @@ export const StyledCompound = styled.div<StyledCompoundProps>(
 
     &::before {
       ${getCompoundStyle(theme)}
-      top: -4px;
+      top: -${theme.spacing.xxs};
     }
     &::after {
       ${getCompoundStyle(theme)}
-      bottom: -4px;
+      bottom: -${theme.spacing.xxs};
     }
   `
 )
@@ -42,7 +49,7 @@ const getCompoundStyle = (theme: ThemeType) => css`
   position: absolute;
   width: 8px;
   height: 8px;
-  left: calc(50% - 4px);
+  left: calc(50% - ${theme.spacing.xxs});
 `
 
 const getDimension = (size: StyledTireProps['size']) => {

@@ -1,10 +1,11 @@
 import { Typography } from '../Typography'
-import { StyledCompound, StyledTire } from './CompoundIcon.styled'
+import { StyledCompound, StyledCompoundContainer, StyledTire } from './CompoundIcon.styled'
 import type { CompoundIconProps } from './CompoundIcon.types'
 export const CompoundIcon = ({
   compoundType,
   size = 'sm',
   withTire = false,
+  withLabel = false,
 }: CompoundIconProps): JSX.Element => {
   const name = compoundType[0]
 
@@ -12,7 +13,7 @@ export const CompoundIcon = ({
     return (
       <Typography
         $isUppercase
-        fontSize="md"
+        fontSize={size}
         fontWeight="bold"
         color={compoundType}
         fontFamily="branded"
@@ -21,17 +22,24 @@ export const CompoundIcon = ({
       </Typography>
     )
   return (
-    <StyledTire size={size} aria-label={compoundType}>
-      <StyledCompound compoundType={compoundType} size={size} />
-      <Typography
-        $isUppercase
-        fontSize="md"
-        fontWeight="bold"
-        color="pureWhite"
-        fontFamily="branded"
-      >
-        {name}
-      </Typography>
-    </StyledTire>
+    <StyledCompoundContainer>
+      <StyledTire size={size} aria-label={compoundType}>
+        <StyledCompound compoundType={compoundType} size={size} />
+        <Typography
+          $isUppercase
+          fontSize="md"
+          fontWeight="bold"
+          color="pureWhite"
+          fontFamily="branded"
+        >
+          {name}
+        </Typography>
+      </StyledTire>
+      {withLabel ? (
+        <Typography tag="span" $isUppercase fontSize="sm" fontWeight="semibold">
+          {compoundType}
+        </Typography>
+      ) : null}
+    </StyledCompoundContainer>
   )
 }

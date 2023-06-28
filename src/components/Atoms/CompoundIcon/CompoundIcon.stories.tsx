@@ -28,7 +28,7 @@ export default {
 
 type Story = StoryObj<CompoundIconProps>
 
-export const Default: Story = {
+export const OnlyIcon: Story = {
   render: ({ compoundType, size }) => (
     <>
       <CompoundIcon compoundType={compoundType} size={size} />
@@ -39,6 +39,13 @@ export const WithTire: Story = {
   render: props => (
     <>
       <CompoundIcon withTire {...props} />
+    </>
+  ),
+}
+export const WithTireAndLabel: Story = {
+  render: props => (
+    <>
+      <CompoundIcon withLabel withTire {...props} />
     </>
   ),
 }
