@@ -1,0 +1,1 @@
+export { CompoundIcon } from './CompoundIcon'
