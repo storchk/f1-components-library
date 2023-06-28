@@ -4,15 +4,8 @@ import { Meta, Typeset } from '@storybook/blocks'
 
 export const typography = {
   type: {
-    primary: 'SoDo Sans',
-  },
-  weight: {
-    thin: '100',
-    light: '300',
-    regular: '400',
-    semiBold: '600',
-    bold: '700',
-    black: '900',
+    default: 'Titillium Web',
+    branding: 'Formula1-Regular_web_0',
   },
   size: {
     s1: 12,
@@ -27,13 +20,30 @@ export const typography = {
   },
 }
 
-export const SampleText = 'The quick brown fox jumps over the lazy dog'
+export const SampleText = "It's lights out and away we go"
 
 # Typography
 
-**Font:** SoDo Sans
+**Font:** Formula1 Regular
 
-**Weights:** 100(thin), 300(light), 400(regular), 800(semiBold), 700(bold), 900(black)
+<Typeset
+
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  sampleText={SampleText}
+  fontFamily={typography.type.branding}
+/>
+
+**Font:** Titillium Web
 
 <Typeset
   fontSizes={[
@@ -47,7 +57,6 @@ export const SampleText = 'The quick brown fox jumps over the lazy dog'
     Number(typography.size.l2),
     Number(typography.size.l3),
   ]}
-  fontWeight={typography.weight.regular}
   sampleText={SampleText}
-  fontFamily={typography.type.primary}
+  fontFamily={typography.type.default}
 />

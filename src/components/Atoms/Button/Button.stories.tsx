@@ -12,7 +12,7 @@ export default {
   },
   argTypes: {
     color: {
-      options: ['black', 'gold', 'white', 'primary'],
+      options: ['primary', 'secondary'],
       control: {
         type: 'select',
       },
@@ -22,15 +22,15 @@ export default {
 
 type Story = StoryObj<ButtonProps>
 
-export const Default: Story = {
-  render: props => <Button variant="default" {...props} />,
+export const Primary: Story = {
+  render: props => <Button variant="primary" {...props} />,
 }
-export const Positive: Story = {
-  render: props => <Button variant="positive" {...props} />,
+export const Secondary: Story = {
+  render: props => <Button variant="secondary" {...props} />,
 }
-export const TextOnly: Story = {
-  render: props => <Button variant="textOnly" {...props} />,
+export const Ghost: Story = {
+  render: props => <Button variant="ghost" {...props} />,
 }
-export const TextLink: Story = {
-  render: props => <Button variant="textOnly" {...props} />,
+export const Text: Story = {
+  render: props => <Button variant="text" {...props} />,
 }

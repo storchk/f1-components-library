@@ -1,7 +1,9 @@
 import type { AnchorHTMLAttributes } from 'react'
 
-export type ButtonColor = 'gold' | 'black' | 'white' | 'primary'
-export type ButtonVariant = 'default' | 'positive' | 'textLink' | 'textOnly'
+import type { ThemeType } from '../../../theme'
+
+export type ButtonColor = 'primary' | 'secondary'
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'text'
 
 export type ButtonProps = {
   color?: ButtonColor
@@ -14,3 +16,7 @@ export type StyledButtonProps = {
   $color: ButtonColor
   $variant: ButtonVariant
 }
+
+export type GetButtonVariantsProps = {
+  theme: ThemeType
+} & StyledButtonProps

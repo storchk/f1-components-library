@@ -7,14 +7,16 @@ export const StyledTypography = styled.div<TypographyProps>(
     theme,
     fontWeight = 'regular',
     fontSize = 'sm',
-    color = 'textDark',
-    isUppercase = false,
+    color,
+    $isUppercase = false,
+    fontFamily = 'default',
   }) => css`
     font-size: ${theme.font.size[fontSize]};
     font-weight: ${theme.font.weight[fontWeight]};
-    color: ${theme.colors[color]};
+    color: ${color ? theme.colors[color] : 'inherit'};
+    font-family: ${theme.font.fontFamily[fontFamily]};
 
-    ${isUppercase
+    ${$isUppercase
       ? css`
           text-transform: uppercase;
         `

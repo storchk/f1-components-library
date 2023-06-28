@@ -1,4 +1,3 @@
 export { colors } from './colors'
-export { mediaQuery } from './mediaQuery'
-export { theme } from './theme'
+export { darkTheme, lightTheme } from './theme'
 export type { ThemeType } from './Theme.types'

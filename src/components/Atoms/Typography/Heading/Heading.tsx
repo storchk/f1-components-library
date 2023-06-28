@@ -18,6 +18,10 @@ const getHeadingByTag = (props: HeadingProps) => {
       return <Typography {...props} fontSize="xxs" />
   }
 }
-export const Heading = ({ tag = 'h3', ...props }: HeadingProps): JSX.Element => {
-  return getHeadingByTag({ tag, ...props })
+export const Heading = ({
+  fontFamily = 'branded',
+  tag = 'h3',
+  ...props
+}: HeadingProps): JSX.Element => {
+  return getHeadingByTag({ fontFamily, tag, ...props })
 }

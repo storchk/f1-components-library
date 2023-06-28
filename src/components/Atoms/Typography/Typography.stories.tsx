@@ -7,7 +7,7 @@ export default {
   title: 'Atoms/Typography',
   component: Typography,
   args: {
-    color: 'textDark',
+    color: 'pureBlack',
     fontWeight: 'regular',
     fontSize: 'sm',
     tag: 'span',
@@ -16,37 +16,39 @@ export default {
   argTypes: {
     color: {
       options: [
-        'black',
-        'white',
-        'neutral',
-        'warmNeutral',
-        'ceramic',
+        'contrast1',
+        'contrast2',
+        'contrast3',
+        'contrast4',
+        'contrast5',
         'primary',
         'primaryAccent',
-        'primaryLight',
-        'primaryDark',
-        'gold',
-        'goldLight',
-        'goldLightes',
-        'error',
-        'warning',
-        'textDark',
-        'textDarkSoft',
-        'textWhite',
-        'textWhiteSoft',
+        'secondary',
+        'pureBlack',
+        'pureWhite',
+        'background',
+        'soft',
+        'medium',
+        'hard',
+        'intermediate',
+        'wet',
+        'fastest',
+        'faster',
+        'slower',
+        'slowest',
       ],
       control: {
         type: 'select',
       },
     },
     fontWeight: {
-      options: ['black', 'bold', 'thin', 'light', 'regular', 'semibold'],
+      options: ['bold', 'light', 'regular', 'semibold'],
       control: {
         type: 'select',
       },
     },
     fontSize: {
-      options: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
+      options: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
       control: {
         type: 'select',
       },
@@ -66,7 +68,7 @@ export default {
   },
 } as Meta
 
-type Story = StoryObj<Pick<TypographyProps, 'color' | 'fontSize' | 'fontWeight'>>
+type Story = StoryObj<TypographyProps>
 const text = 'The quick brown fox jumps over the lazy dog'
 
 export const Typo: Story = {

@@ -3,7 +3,7 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from '../src/styles/globals'
-import { theme } from '../src/theme'
+import { lightTheme } from '../src/theme'
 
 export const preview = {
   parameters: {
@@ -27,6 +27,6 @@ const withGlobal = content => (
     {content()}
   </>
 )
-const withTheme = story => <ThemeProvider theme={theme}>{story()}</ThemeProvider>
+const withTheme = story => <ThemeProvider theme={lightTheme}>{story()}</ThemeProvider>
 
 export const decorators = [withTheme, withGlobal]
