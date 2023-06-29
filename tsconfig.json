@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "allowSyntheticDefaultImports": false,
     "esModuleInterop": false,
     "noEmit": true,
@@ -9,5 +10,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
 }

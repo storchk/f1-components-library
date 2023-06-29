@@ -1,4 +1,7 @@
 !.storybook
 **/*.mdx
-commitlint.config.js
 **/*.d.ts
+.storybook/**/*
+jest.**.js
+**.config.*
+coverage/**/*

@@ -1,6 +1,6 @@
 import type { ThemeType } from '../../../theme'
 
-export type BadgeVariant = 'primary' | 'secondary' | 'ghost' | 'text'
+export type BadgeVariant = 'primary' | 'secondary'
 
 export type BadgeProps = {
   variant?: BadgeVariant
