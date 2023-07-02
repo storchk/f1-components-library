@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms: Button snapshot | color: primary 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: Titillium Web;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  color: #1f1f27;
+  border-color: #e10600;
+}
+
+.c0:hover {
+  box-shadow: 0 0 0 2px #e10600 inset;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    fontSize="xs"
+    fontWeight="semibold"
+  >
+    Hello world! I am using React
+  </span>
+</button>
+`;
+
+exports[`Atoms: Button snapshot | color: secondary 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: Titillium Web;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  color: #1f1f27;
+  border-color: #1f1f27;
+}
+
+.c0:hover {
+  box-shadow: 0 0 0 2px #1f1f27 inset;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    fontSize="xs"
+    fontWeight="semibold"
+  >
+    Hello world! I am using React
+  </span>
+</button>
+`;
+
+exports[`Atoms: Button snapshot | variant: ghost 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: Titillium Web;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  color: #e10600;
+  border: none;
+}
+
+.c0:hover {
+  color: #c30500;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    fontSize="xs"
+    fontWeight="semibold"
+  >
+    Hello world! I am using React
+  </span>
+</button>
+`;
+
+exports[`Atoms: Button snapshot | variant: primary 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: Titillium Web;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  color: #1f1f27;
+  border-color: #e10600;
+}
+
+.c0:hover {
+  box-shadow: 0 0 0 2px #e10600 inset;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    fontSize="xs"
+    fontWeight="semibold"
+  >
+    Hello world! I am using React
+  </span>
+</button>
+`;
+
+exports[`Atoms: Button snapshot | variant: secondary 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: Titillium Web;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  color: #fff;
+  border-color: #e10600;
+  background-color: #e10600;
+}
+
+.c0:hover {
+  color: #1f1f27;
+  border-color: #e10600;
+  background-color: transparent;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    fontSize="xs"
+    fontWeight="semibold"
+  >
+    Hello world! I am using React
+  </span>
+</button>
+`;
+
+exports[`Atoms: Button snapshot | variant: test 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: Titillium Web;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 2px solid;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  color: #e10600;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.c0:hover {
+  color: #c30500;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    fontSize="xs"
+    fontWeight="semibold"
+  >
+    Hello world! I am using React
+  </span>
+</button>
+`;

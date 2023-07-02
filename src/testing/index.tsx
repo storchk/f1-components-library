@@ -3,6 +3,7 @@ import * as testingLibrary from '@testing-library/react'
 import type { FC, ReactElement } from 'react'
 import { create } from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
+import userEvent from '@testing-library/user-event'
 
 import { lightTheme } from '../theme'
 
@@ -24,8 +25,10 @@ function renderWithThemeTL(
   return testingLibrary.render(tree, { wrapper: withThemeProvider(theme), ...options })
 }
 
+const {} = testingLibrary
 export const testing = {
   ...testingLibrary,
   render: renderWithThemeTL,
   renderer,
+  userEvent,
 }

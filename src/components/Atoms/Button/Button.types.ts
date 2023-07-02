@@ -15,7 +15,7 @@ export type ButtonProps = {
 export type StyledButtonProps = {
   $color: ButtonColor
   $variant: ButtonVariant
-}
+} & Omit<ButtonProps, 'label' | 'color' | 'variant'>
 
 export type GetButtonVariantsProps = {
   theme: ThemeType

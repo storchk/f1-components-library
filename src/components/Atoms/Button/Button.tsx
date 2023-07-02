@@ -5,10 +5,10 @@ export const Button = ({
   variant = 'primary',
   color = 'primary',
   label,
-  ...props
+  onClick,
 }: ButtonProps): JSX.Element => {
   return (
-    <StyledButton $variant={variant} $color={color} {...props}>
+    <StyledButton $variant={variant} $color={color} onClick={onClick}>
       <Typography $isUppercase fontSize="xs" fontWeight="semibold">
         {label}
       </Typography>
