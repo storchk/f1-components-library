@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms: Card snapshot | variant: primary 1`] = `
+.c1 {
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  font-family: Titillium Web;
+}
+
+.c0 {
+  display: block;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  border-bottom: solid 2px;
+  border-right: solid 2px;
+  border-bottom-right-radius: 24px;
+  background-color: #fff;
+  border-bottom-color: #f5f2ef;
+  border-right-color: #f5f2ef;
+}
+
+.c0:hover {
+  border-bottom-color: #e10600;
+  border-right-color: #e10600;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 > div {
+  padding: 40px 16px;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <div
+      className="c1"
+    >
+      Hello world! I am using React
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Atoms: Card snapshot | variant: secondary 1`] = `
+.c2 {
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  font-family: Titillium Web;
+}
+
+.c0 {
+  display: block;
+  -webkit-transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  transition: all 0.5s cubic-bezier(0.2,0,0.05,1);
+  background-color: #fff;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.c0:hover {
+  background-color: #1f1f27;
+}
+
+.c0:hover .c1 {
+  color: #fff;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 > div {
+  padding: 40px 16px;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <div
+      className="c1 c2"
+    >
+      Hello world! I am using React
+    </div>
+  </div>
+</div>
+`;

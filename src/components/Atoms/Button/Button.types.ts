@@ -10,6 +10,7 @@ export type ButtonProps = {
   variant?: ButtonVariant
   isLoading?: boolean
   label: string
+  stopPropagation?: boolean
 } & AnchorHTMLAttributes<HTMLAnchorElement | HTMLButtonElement>
 
 export type StyledButtonProps = {
