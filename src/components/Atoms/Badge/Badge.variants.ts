@@ -13,7 +13,7 @@ export const getBadgeVariants = ({ theme, $variant }: GetBadgeVariantsProps) => 
     case 'secondary':
       return css`
         color: ${theme.colors.secondary};
-        padding: ${theme.spacing.xxs} ${theme.spacing.xs};
+        padding: ${theme.spacing.xxs} ${theme.spacing.sm};
         border-radius: ${theme.size.md}px;
         border: ${theme.border.width.small} solid ${theme.colors.primary};
       `

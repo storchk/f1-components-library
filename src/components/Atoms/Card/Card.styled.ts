@@ -7,7 +7,7 @@ import { StyledTypography } from '../Typography'
 export const StyledCardText = styled(StyledTypography)``
 
 export const StyledCard = styled.div<StyledCardProps>(
-  ({ theme, $variant }) => css`
+  ({ theme, $variant, $noPadding = false }) => css`
     display: block;
     transition: all 0.5s cubic-bezier(0.2, 0, 0.05, 1);
 
@@ -16,8 +16,12 @@ export const StyledCard = styled.div<StyledCardProps>(
     &:hover {
       cursor: pointer;
     }
-    > div {
-      padding: ${theme.spacing.xl} ${theme.spacing.sm};
-    }
+
+    ${!$noPadding &&
+    css`
+      > div {
+        padding: ${theme.spacing.xl} ${theme.spacing.sm};
+      }
+    `}
   `
 )

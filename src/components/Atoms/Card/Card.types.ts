@@ -5,6 +5,7 @@ export type CardVariant = 'primary' | 'secondary'
 export type CardProps = {
   variant?: CardVariant
   children: string | JSX.Element | JSX.Element[]
+  $noPadding?: boolean
 }
 
 export type StyledCardProps = {
