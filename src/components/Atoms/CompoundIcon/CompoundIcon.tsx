@@ -23,7 +23,7 @@ export const CompoundIcon = ({
     )
   return (
     <StyledCompoundContainer>
-      <StyledTire size={size} aria-label={compoundType}>
+      <StyledTire size={size} compoundType={compoundType} aria-label={compoundType}>
         <StyledCompound compoundType={compoundType} size={size} />
         <Typography
           $isUppercase
