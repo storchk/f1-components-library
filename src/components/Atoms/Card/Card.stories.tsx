@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { Badge } from '../Badge'
+import { Typography } from '../Typography'
 import { Card } from './Card'
 import type { CardProps } from './Card.types'
-import { Typography } from '../Typography'
-import { Badge } from '../Badge'
 
 export default {
   title: 'Atoms/Card',

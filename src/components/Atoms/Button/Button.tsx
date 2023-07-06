@@ -1,7 +1,8 @@
+import type { MouseEvent } from 'react'
+
 import { Typography } from '../Typography'
 import { StyledButton } from './Button.styled'
 import type { ButtonProps } from './Button.types'
-import type { MouseEvent } from 'react'
 
 export const Button = ({
   variant = 'primary',

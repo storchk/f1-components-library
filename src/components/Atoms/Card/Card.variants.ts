@@ -1,7 +1,7 @@
 import { css } from 'styled-components'
 
-import type { GetCardVariantsProps } from './Card.types'
 import { StyledCardText } from './Card.styled'
+import type { GetCardVariantsProps } from './Card.types'
 
 export const getCardVariants = ({ theme, $variant }: GetCardVariantsProps) => {
   switch ($variant) {
