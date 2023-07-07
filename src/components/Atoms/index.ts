@@ -1,6 +1,6 @@
 export { Badge } from './Badge'
 export { Button } from './Button'
+export { Card } from './Card'
 export { CompoundIcon } from './CompoundIcon'
 export { Link } from './Link'
-export { Heading, Typography, StyledTypography } from './Typography'
-export { Card } from './Card'
+export { Heading, StyledTypography, Typography } from './Typography'

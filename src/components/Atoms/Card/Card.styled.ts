@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
+import { StyledTypography } from '../Typography'
 import type { StyledCardProps } from './Card.types'
 import { getCardVariants } from './Card.variants'
-import { StyledTypography } from '../Typography'
 
 export const StyledCardText = styled(StyledTypography)``
 

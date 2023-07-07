@@ -1,7 +1,8 @@
+import { axe } from 'jest-axe'
+
 import { testing } from '../../../testing'
 import { Button } from './Button'
-import { ButtonProps } from './Button.types'
-import { axe } from 'jest-axe'
+import type { ButtonProps } from './Button.types'
 
 const { render, screen, renderer } = testing
 const label = 'Hello world! I am using React'
@@ -40,8 +41,8 @@ describe('Atoms: Button', () => {
     expect(view).toMatchSnapshot()
   })
 
-  test('A11y - No violations detected', async () => {
+  it('A11y - No violations detected', async () => {
     const { container } = renderComponent()
-    expect(await axe(container)).toHaveNoViolations()
+    await expect(axe(container)).resolves.toHaveNoViolations()
   })
 })

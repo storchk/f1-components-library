@@ -1,7 +1,8 @@
+import { axe } from 'jest-axe'
+
 import { testing } from '../../../testing'
 import { Card } from './Card'
-import { CardProps } from './Card.types'
-import { axe } from 'jest-axe'
+import type { CardProps } from './Card.types'
 
 const { render, screen, renderer } = testing
 const mockText = 'Hello world! I am using React'
@@ -23,8 +24,8 @@ describe('Atoms: Card', () => {
     expect(view).toMatchSnapshot()
   })
 
-  test('A11y - No violations detected', async () => {
+  it('A11y - No violations detected', async () => {
     const { container } = renderComponent()
-    expect(await axe(container)).toHaveNoViolations()
+    await expect(axe(container)).resolves.toHaveNoViolations()
   })
 })
